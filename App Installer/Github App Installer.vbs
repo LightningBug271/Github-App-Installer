@@ -1,0 +1,77 @@
+    Sub Window_OnLoad
+            window.resizeTo 550, 700
+        End Sub
+        Sub Git
+            Set objShell = CreateObject("WScript.Shell")
+            objShell.Run "winget install git.git --scope user"
+        End Sub
+        Sub VSCode
+            Set objShell = CreateObject("WScript.Shell")
+            objShell.Run "winget install Microsoft.VisualStudioCode --scope user"
+	End Sub
+        Sub PWSH
+            Set objShell = CreateObject("WScript.Shell")
+            objShell.Run "winget install --id Microsoft.PowerShell --source winget"
+	End Sub	
+        Sub UniGet
+            Set objShell = CreateObject("WScript.Shell")
+            objShell.Run "winget install Devolutions.UniGetUI --scope user"
+	End Sub
+        Sub Copilot
+            Set objShell = CreateObject("WScript.Shell")
+            objShell.Run "winget install GitHub.Copilot"
+	End Sub	
+        Sub LFS
+            Set objShell = CreateObject("WScript.Shell")
+            objShell.Run "winget install GitHub.GitLFS"
+	End Sub
+        Sub Hub
+            Set objShell = CreateObject("WScript.Shell")
+            objShell.Run "winget install -e --id GitHub.GitHubDesktop"
+	End Sub	
+        Sub npm
+            Set objShell = CreateObject("WScript.Shell")
+            objShell.Run "winget install OpenJS.NodeJS.LTS --scope user"
+	End Sub	
+        Sub CloseApp
+            window.close()
+        End Sub
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #61ab75;
+            padding: 20px;
+        }
+        .btn {
+            display: block;
+            width: 260px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+	<h1>GithubAppInstaller</h1>
+    <h2>Select a App:</h2>
+    <h6>In order to make a man or a boy covet a thing, it is only necessary to make the thing difficult to attain. <i>Twain, Mark. The Adventures of Tom Sawyer. pg 20.</i></h6>
+    <input type="button" class="btn" value="Download Git" onClick="Git">
+    <input type="button" class="btn" value="Download Github" onClick="Hub">
+    <input type="button" class="btn" value="Download VSCode" onClick="VSCode">
+    <input type="button" class="btn" value="Download Powershell" onClick="PWSH">
+    <input type="button" class="btn" value="Download UniGetUI" onClick="UniGet">
+    <input type="button" class="btn" value="Download Github Copilot" onClick="Copilot">
+    <input type="button" class="btn" value="Download Git LFS" onClick="LFS">
+    <input type="button" class="btn" value="Download Node.js" onClick="npm">
+
+    <hr>
+
+    <hr>    
+
+    <input type="button" class="btn" value="Exit Application" onClick="CloseApp">
+<h6>GithubAppInstaller version: 1.1.1</h6>
+
+</body>
+</html>
