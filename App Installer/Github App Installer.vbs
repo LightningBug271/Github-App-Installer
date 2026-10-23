@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github App Installer</title>
+    
+    <HTA:APPLICATION 
+        ID="GithubAppInstaller"
+        APPLICATIONNAME="GithubAppInstaller"
+        SCROLL="yes"
+        SINGLEINSTANCE="yes"
+        WINDOWSTATE="normal"
+    />
+
+    <script language="VBScript">
     Sub Window_OnLoad
             window.resizeTo 550, 700
         End Sub
