@@ -7,4 +7,5 @@ objShell.Run "winget install GitHub.Copilot", 0, False
 objShell.Run "winget install GitHub.GitLFS", 0, False
 objShell.Run "winget install -e --id GitHub.GitHubDesktop", 0, False
 objShell.Run "winget install OpenJS.NodeJS.LTS --scope user", 0, False
-	
+objShell.Run "winget install -e --id OpenJS.Electron.44",0, False
+objShell.Run "npm install --save-dev electron electron-builder",0, False
