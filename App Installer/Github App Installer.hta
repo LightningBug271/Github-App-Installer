@@ -47,6 +47,11 @@
             Set objShell = CreateObject("WScript.Shell")
             objShell.Run "winget install OpenJS.NodeJS.LTS --scope user"
 	End Sub	
+		Sub Elec
+			set objShell = CreateObject("WScript.Shell")
+			objShell.Run "winget install -e --id OpenJS.Electron.44"
+			objShell.Run "npm install --save-dev electron electron-builder"
+	End Sub
         Sub CloseApp
             window.close()
         End Sub
@@ -79,13 +84,14 @@
     <input type="button" class="btn" value="Download Github Copilot" onClick="Copilot">
     <input type="button" class="btn" value="Download Git LFS" onClick="LFS">
     <input type="button" class="btn" value="Download Node.js" onClick="npm">
+	<input type="button" class="btn" value="Download Electron" onClick="Elec">
 
     <hr>
 
     <hr>    
 
     <input type="button" class="btn" value="Exit Application" onClick="CloseApp">
-<h6>GithubAppInstaller version: 1.1.1</h6>
+<h6>GithubAppInstaller version: 1.2.1</h6>
 
 </body>
 </html>
