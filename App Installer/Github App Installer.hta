@@ -52,6 +52,10 @@
 			objShell.Run "winget install -e --id OpenJS.Electron.44"
 			objShell.Run "npm install --save-dev electron electron-builder"
 	End Sub
+ Sub sysint
+CreateObject("WScript.Shell")
+			objShell.Run "winget install -e --id Microsoft.Sysinternals.ProcessExplorer --scope user"
+End Sub
         Sub CloseApp
             window.close()
         End Sub
@@ -85,6 +89,7 @@
     <input type="button" class="btn" value="Download Git LFS" onClick="LFS">
     <input type="button" class="btn" value="Download Node.js" onClick="npm">
 	<input type="button" class="btn" value="Download Electron" onClick="Elec">
+<input type="button" class="btn" value="Download Process Explorer" onClick="sysint">
 
     <hr>
 
