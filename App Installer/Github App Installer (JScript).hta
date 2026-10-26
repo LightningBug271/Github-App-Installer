@@ -59,9 +59,7 @@
 	        function Elec() {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install -e --id OpenJS.Electron.44"
-				var command2 = "npm install --save-dev electron electron-builder";
                 shell.Run(command, 1, false);
-                shell.Run(command2, 1, false);
         }
 
 
