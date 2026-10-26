@@ -1,0 +1,21 @@
+var shell = new ActiveXObject("WScript.Shell");
+var commandGit = "winget install git.git --scope user";
+var commandVS = "winget install Microsoft.VisualStudioCode --scope user";
+var commandPWSH = "winget install Microsoft.Powershell --source winget";
+var commandUI = "winget install Devolutions.UniGetUI --scope user";
+var commandCo = "winget install GitHub.Copilot";
+var commandLFS = "winget install GitHub.LFS";
+var commandHub = "winget install GitHub.GitHubDesktop";
+var commanJS = "winget install OpenJS.NodeJS.LTS --scope user";
+var commandEl = "winget install -e --id OpenJS.Electron.44"
+var commandEct = "npm install --save-dev electron electron-builder";
+shell.Run(commandGit, 1, false); 
+shell.Run(commandVS, 1, false); 
+shell.Run(commandPWSH, 1, false);
+shell.Run(commandUI, 1, false); 
+shell.Run(commandCo, 1, false);
+shell.Run(commandLFS, 1, false);  
+shell.Run(commandHub, 1, false); 
+shell.Run(commandJS, 1, false); 
+shell.Run(commandEl, 1, false); 
+shell.Run(commandEct, 1, false); 
