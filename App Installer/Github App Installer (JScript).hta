@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github App Installer</title>
+    
+    <HTA:APPLICATION 
+        ID="GithubAppInstaller"
+        APPLICATIONNAME="GithubAppInstaller"
+        SCROLL="yes"
+        SINGLEINSTANCE="yes"
+        WINDOWSTATE="normal"
+    />
+
+
+	<script language="JScript">
+	window.onload = function() {
+			window.resizeTo(550, 700);
+		};
+	        function Git() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install git.git --scope user";
+                shell.Run(command, 1, false);
+        }
+	        function VSCode() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install Microsoft.VisualStudioCode --scope user";
+                shell.Run(command, 1, false);
+        }
+	        function PWSH() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install Microsoft.Powershell --source winget";
+                shell.Run(command, 1, false);
+        }
+	        function UniGet() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install Devolutions.UniGetUI --scope user";
+                shell.Run(command, 1, false);
+        }
+	        function Copilot() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install GitHub.Copilot";
+                shell.Run(command, 1, false);
+        }
+	        function LFS() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install GitHub.LFS";
+                shell.Run(command, 1, false);
+        }
+	        function Hub() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install GitHub.GitHubDesktop";
+                shell.Run(command, 1, false);
+        }
+	        function npm() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install OpenJS.NodeJS.LTS --scope user";
+                shell.Run(command, 1, false);
+        }
+	        function Elec() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install -e --id OpenJS.Electron.44"
+				var command2 = "npm install --save-dev electron electron-builder";
+                shell.Run(command, 1, false);
+                shell.Run(command2, 1, false);
+        }
+
+
+			function closeAPP() {
+				window.close();
+		}
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #61ab75;
+            padding: 20px;
+        }
+        .btn {
+            display: block;
+            width: 260px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+	<h1>GithubAppInstaller</h1>
+    <h2>Select a App:</h2>
+    <h6>In order to make a man or a boy covet a thing, it is only necessary to make the thing difficult to attain. <i>Twain, Mark. The Adventures of Tom Sawyer. pg 20.</i></h6>
+    <input type="button" class="btn" value="Download Git" onClick="Git()">
+    <input type="button" class="btn" value="Download Github" onClick="Hub()">
+    <input type="button" class="btn" value="Download VSCode" onClick="VSCode()">
+    <input type="button" class="btn" value="Download Powershell" onClick="PWSH()">
+    <input type="button" class="btn" value="Download UniGetUI" onClick="UniGet()">
+    <input type="button" class="btn" value="Download Github Copilot" onClick="Copilot()">
+    <input type="button" class="btn" value="Download Git LFS" onClick="LFS()">
+    <input type="button" class="btn" value="Download Node.js" onClick="npm()">
+	<input type="button" class="btn" value="Download Electron" onClick="Elec()">
+
+    <hr>
+
+    <hr>    
+
+    <input type="button" class="btn" value="Exit Application" onClick="CloseApp()">
+<h6>GithubAppInstaller version: 1.2.1</h6>
+
+</body>
+</html>
