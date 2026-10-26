@@ -61,8 +61,11 @@
                 var command = "winget install -e --id OpenJS.Electron.44"
                 shell.Run(command, 1, false);
         }
-
-
+            function Note() {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install notepad++ --scope user"
+                shell.Run(command, 1, false);
+            }
 			function closeAPP() {
 				window.close();
 		}
@@ -96,6 +99,7 @@
     <input type="button" class="btn" value="Download Git LFS" onClick="LFS()">
     <input type="button" class="btn" value="Download Node.js" onClick="npm()">
 	<input type="button" class="btn" value="Download Electron" onClick="Elec()">
+	<input type="button" class="btn" value="Download Notepad++" onClick="Note()">
 
     <hr>
 
