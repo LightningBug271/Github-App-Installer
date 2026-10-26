@@ -10,3 +10,4 @@ objShell.Run "winget install OpenJS.NodeJS.LTS --scope user", 0, False
 objShell.Run "winget install -e --id OpenJS.Electron.44",0, False
 objShell.Run "npm install --save-dev electron electron-builder",0, False
 objShell.Run "winget install -e --id Microsoft.Sysinternals.ProcessExplorer --scope user",0, False
+objShell.Run "winget install notepad++ --scope user", 0, False

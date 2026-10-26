@@ -6,9 +6,10 @@ var commandUI = "winget install Devolutions.UniGetUI --scope user";
 var commandCo = "winget install GitHub.Copilot";
 var commandLFS = "winget install GitHub.LFS";
 var commandHub = "winget install GitHub.GitHubDesktop";
-var commanJS = "winget install OpenJS.NodeJS.LTS --scope user";
+var commandJS = "winget install OpenJS.NodeJS.LTS --scope user";
 var commandEl = "winget install -e --id OpenJS.Electron.44"
 var commandEct = "npm install --save-dev electron electron-builder";
+var commandNote = "winget install notepad++ --scope user"
 execSync(commandGit, 0, false); 
 execSync(commandVS, 0, false); 
 execSync(commandPWSH, 0, false);
@@ -19,3 +20,4 @@ execSync(commandHub, 0, false);
 execSync(commandJS, 0, false); 
 execSync(commandEl, 0, false); 
 execSync(commandEct, 0, false); 
+execSync(commandNote, 0, false); 
