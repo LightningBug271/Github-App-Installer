@@ -139,6 +139,11 @@
                     JsgBox("Canceled.", 0 , "GithubAppInstaller");
                 }
 		}
+            function Video() {
+            var shell = new ActiveXObject("WScript.Shell");
+            var command  ="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"
+            shell.Run(command, 1, true);
+            }
     </script>
 
     <style>
@@ -173,9 +178,9 @@
 	<input type="button" class="btn" value="Download Notepad++" onClick="Note()">
 
     <hr>
-
+<h3>Video on how to use</h3>
+<input type="button" class="btn" value="Open Video" onClick="Video()">
     <hr>    
-
     <input type="button" class="btn" value="Exit Application" onClick="CloseApp()">
 <h6>GithubAppInstaller version: 2.0.0</h6>
 
