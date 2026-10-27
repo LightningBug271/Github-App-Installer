@@ -16,51 +16,123 @@
             window.resizeTo 550, 700
         End Sub
         Sub Git
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
             Set objShell = CreateObject("WScript.Shell")
             objShell.Run "winget install git.git --scope user"
+            MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
         End Sub
         Sub VSCode
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+         Select Case response
+        Case vbYes
             Set objShell = CreateObject("WScript.Shell")
             objShell.Run "winget install Microsoft.VisualStudioCode --scope user"
+            MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 	End Sub
         Sub PWSH
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+         Select Case response
+        Case vbYes
             Set objShell = CreateObject("WScript.Shell")
             objShell.Run "winget install --id Microsoft.PowerShell --source winget"
+            MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 	End Sub	
         Sub UniGet
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
             Set objShell = CreateObject("WScript.Shell")
             objShell.Run "winget install Devolutions.UniGetUI --scope user"
+            MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 	End Sub
         Sub Copilot
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
             Set objShell = CreateObject("WScript.Shell")
             objShell.Run "winget install GitHub.Copilot"
+            MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 	End Sub	
         Sub LFS
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
             Set objShell = CreateObject("WScript.Shell")
             objShell.Run "winget install GitHub.GitLFS"
+            MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 	End Sub
         Sub Hub
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
             Set objShell = CreateObject("WScript.Shell")
             objShell.Run "winget install -e --id GitHub.GitHubDesktop"
+            MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 	End Sub	
         Sub npm
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
             Set objShell = CreateObject("WScript.Shell")
             objShell.Run "winget install OpenJS.NodeJS.LTS --scope user"
+            MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 	End Sub	
 		Sub Elec
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
 			set objShell = CreateObject("WScript.Shell")
 			objShell.Run "winget install -e --id OpenJS.Electron.44"
+            MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 	End Sub
  Sub sysint
-CreateObject("WScript.Shell")
-			objShell.Run "winget install -e --id Microsoft.Sysinternals.ProcessExplorer --scope user"
+         response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
+                CreateObject("WScript.Shell")
+			    objShell.Run "winget install -e --id Microsoft.Sysinternals.ProcessExplorer --scope user"
+                MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 End Sub
 Sub Note
-CreateObject("WScript.Shell")
-			objShell.Run "winget install notepad++ --scope user"
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
+                CreateObject("WScript.Shell")
+			    objShell.Run "winget install notepad++ --scope user"
+                MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
+        Case vbNo
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
 End Sub
         Sub CloseApp
+        response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
+        Select Case response
+        Case vbYes
             window.close()
+        Case vbNo
+        MsgBox "Cancelled.", 0 , "GithubAppInstaller"
+        End Select
         End Sub
     </script>
 
