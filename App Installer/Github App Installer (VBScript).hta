@@ -24,6 +24,7 @@
             MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
         Case vbNo
             MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
+        End Select
         End Sub
         Sub VSCode
         response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
@@ -34,6 +35,8 @@
             MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
         Case vbNo
             MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
+            MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
+        End Select
 	End Sub
         Sub PWSH
         response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
@@ -44,6 +47,7 @@
             MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
         Case vbNo
             MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
+        End Select
 	End Sub	
         Sub UniGet
         response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
@@ -54,7 +58,8 @@
             MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
         Case vbNo
             MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
-	End Sub
+	End Select
+    End Sub
         Sub Copilot
         response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
         Select Case response
@@ -64,7 +69,8 @@
             MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
         Case vbNo
             MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
-	End Sub	
+	End Select
+    End Sub	
         Sub LFS
         response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
         Select Case response
@@ -74,7 +80,8 @@
             MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
         Case vbNo
             MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
-	End Sub
+	End Select
+    End Sub
         Sub Hub
         response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
         Select Case response
@@ -84,7 +91,8 @@
             MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
         Case vbNo
             MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
-	End Sub	
+	End Select
+    End Sub	
         Sub npm
         response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
         Select Case response
@@ -94,7 +102,8 @@
             MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
         Case vbNo
             MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
-	End Sub	
+	End Select
+    End Sub	
 		Sub Elec
         response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
         Select Case response
@@ -104,7 +113,8 @@
             MsgBox "Installation Complete.", 0 , "GithubAppInstaller"
         Case vbNo
             MsgBox "Installation Canceled.", 0 , "GithubAppInstaller"
-	End Sub
+	End Select
+    End Sub
  Sub sysint
          response = MsgBox ("Are you Sure?", 4+32 ,"GithubAppInstaller")
         Select Case response
@@ -134,7 +144,7 @@ End Sub
         MsgBox "Cancelled.", 0 , "GithubAppInstaller"
         End Select
         End Sub
-    Sub Very Important
+    Sub VeryImportant
         Set objShell = CreateObject("WScript.Shell")
         objShell.Run "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"
     End Sub
