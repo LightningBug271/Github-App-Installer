@@ -1,4 +1,5 @@
 Set objShell = CreateObject("WScript.Shell")
+WScript.Echo("Start Instalation?")
 objShell.Run "winget install git.git --scope user", 0, False
 objShell.Run "winget install Microsoft.VisualStudioCode --scope user", 0, False
 objShell.Run "winget install --id Microsoft.PowerShell --source winget", 0, False
@@ -8,6 +9,6 @@ objShell.Run "winget install GitHub.GitLFS", 0, False
 objShell.Run "winget install -e --id GitHub.GitHubDesktop", 0, False
 objShell.Run "winget install OpenJS.NodeJS.LTS --scope user", 0, False
 objShell.Run "winget install -e --id OpenJS.Electron.44",0, False
-objShell.Run "npm install --save-dev electron electron-builder",0, False
 objShell.Run "winget install -e --id Microsoft.Sysinternals.ProcessExplorer --scope user",0, False
 objShell.Run "winget install notepad++ --scope user", 0, False
+WScript.Echo("Installation Complete.")

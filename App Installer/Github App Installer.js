@@ -1,15 +1,14 @@
-var { execSync } = require('child_process');
-var commandGit = "winget install git.git --scope user";
-var commandVS = "winget install Microsoft.VisualStudioCode --scope user";
-var commandPWSH = "winget install Microsoft.Powershell --source winget";
-var commandUI = "winget install Devolutions.UniGetUI --scope user";
-var commandCo = "winget install GitHub.Copilot";
-var commandLFS = "winget install GitHub.LFS";
-var commandHub = "winget install GitHub.GitHubDesktop";
-var commandJS = "winget install OpenJS.NodeJS.LTS --scope user";
-var commandEl = "winget install -e --id OpenJS.Electron.44"
-var commandEct = "npm install --save-dev electron electron-builder";
-var commandNote = "winget install notepad++ --scope user"
+const { execSync } = require('child_process');
+let commandGit = "winget install git.git --scope user";
+let commandVS = "winget install Microsoft.VisualStudioCode --scope user";
+let commandPWSH = "winget install Microsoft.Powershell --source winget";
+let commandUI = "winget install Devolutions.UniGetUI --scope user";
+let commandCo = "winget install GitHub.Copilot";
+let commandLFS = "winget install GitHub.LFS";
+let commandHub = "winget install GitHub.GitHubDesktop";
+let commandJS = "winget install OpenJS.NodeJS.LTS --scope user";
+let commandEl = "winget install -e --id OpenJS.Electron.44"
+let commandNote = "winget install notepad++ --scope user"
 execSync(commandGit, 0, false); 
 execSync(commandVS, 0, false); 
 execSync(commandPWSH, 0, false);
@@ -19,5 +18,4 @@ execSync(commandLFS, 0, false);
 execSync(commandHub, 0, false); 
 execSync(commandJS, 0, false); 
 execSync(commandEl, 0, false); 
-execSync(commandEct, 0, false); 
 execSync(commandNote, 0, false); 
