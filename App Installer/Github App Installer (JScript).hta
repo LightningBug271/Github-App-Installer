@@ -24,7 +24,7 @@
         Case vbNo
         End Function
         Function EndSelect
-        End Select
+        End
         End Function
     </script>
 	<script language="JScript">
@@ -33,129 +33,123 @@
 		};
 	        function Git() {
                 JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
+                  if (response == 6) {
                     var shell = new ActiveXObject("WScript.Shell");
                     var command = "winget install git.git --scope user";
                     shell.Run(command, 1, false);
                 JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
+                  }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                  }
+                
                 
         }
 	        function VSCode() {
-                JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-                    var shell = new ActiveXObject("WScript.Shell");
-                    var command = "winget install Microsoft.VisualStudioCode --scope user";
-                    shell.Run(command, 1, false);
+            JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install Microsoft.VisualStudioCode --scope user";
+                shell.Run(command, 1, false);
                 JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
         }
 	        function PWSH() {
-                JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-                    var shell = new ActiveXObject("WScript.Shell");
-                    var command = "winget install Microsoft.Powershell --source winget";
-                    shell.Run(command, 1, false);
-                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
+            JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install Microsoft.Powershell --source winget";
+                shell.Run(command, 1, false);
+                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
         }
 	        function UniGet() {
-                JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-                    var shell = new ActiveXObject("WScript.Shell");
-                    var command = "winget install Devolutions.UniGetUI --scope user";
-                    shell.Run(command, 1, false);
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
-        }
+            JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install Devolutions.UniGetUI --scope user";
+                shell.Run(command, 1, false);
+                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
         }
 	        function Copilot() {
-                JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-                    var shell = new ActiveXObject("WScript.Shell");
-                    var command = "winget install GitHub.Copilot";
-                    shell.Run(command, 1, false);
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
+            JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install GitHub.Copilot";
+                shell.Run(command, 1, false);
+                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
         }
 	        function LFS() {
-                JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-                    var shell = new ActiveXObject("WScript.Shell");
-                    var command = "winget install GitHub.LFS";
-                    shell.Run(command, 1, false);
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
+            JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install GitHub.LFS";
+                shell.Run(command, 1, false);
+                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
         }
 	        function Hub() {
-                JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-                    var shell = new ActiveXObject("WScript.Shell");
-                    var command = "winget install GitHub.GitHubDesktop";
-                    shell.Run(command, 1, false);
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
+            JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install GitHub.GitHubDesktop";
+                shell.Run(command, 1, false);
+                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
         }
 	        function npm() {
-                JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-                    var shell = new ActiveXObject("WScript.Shell");
-                    var command = "winget install OpenJS.NodeJS.LTS --scope user";
-                    shell.Run(command, 1, false);
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
-        }
+            JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install OpenJS.NodeJS.LTS --scope user";
+                shell.Run(command, 1, false);
+                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
         }
 	        function Elec() {
-                JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-                    var shell = new ActiveXObject("WScript.Shell");
-                    var command = "winget install -e --id OpenJS.Electron.44"
-                    shell.Run(command, 1, false);
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
+            JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install -e --id OpenJS.Electron.44"
+                shell.Run(command, 1, false);
+                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
         }
             function Note() {
-                JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-                    var shell = new ActiveXObject("WScript.Shell");
-                    var command = "winget install notepad++ --scope user"
-                    shell.Run(command, 1, false);
-                N()
-                 JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
-            EndSelect()
-        }
+            JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "winget install notepad++ --scope user"
+                shell.Run(command, 1, false);
+                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
             }
 			function closeAPP() {
             JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
-                YN()
-                Y()
-				window.close();
-                N()
-                 JsgBox("Cancelled.", 0 , "GithubAppInstaller");
-            EndSelect()
+              if (response == 6) {
+                			window.close();
+              }else {
+                    JsgBox("Canceled.", 0 , "GithubAppInstaller");
+                }
 		}
     </script>
 
