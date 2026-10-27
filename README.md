@@ -1,10 +1,7 @@
 # Github-App-Installer
 App i made to install Git related apps and a few more (like pwsh, UniGetUi, VSCode, and Node.js)</br>
 <hr>
-Github App Installer.hta (any edition) uses buttons to choose apps to install, and the .vbs installs all apps when opened automatically. I don't know about the .js, but it should work the same.
-
->[!WARNING]
->I know the .js is broken. The issue is being worked on.
+Github App Installer.hta (any edition) uses buttons to choose apps to install, and the .vbs installs all apps if confirmed. The .js installs the apps automatically, but only if you already have [Node.js](https://nodejs.org/en/download/) installed.
 
 <hr>
 This would be private, but my <ins>school doesn't allow me</ins> to download from private repositories.
