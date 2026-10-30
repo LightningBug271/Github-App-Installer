@@ -8,3 +8,5 @@ App i made to install Git related apps and a few more (like pwsh, UniGetUi, VSCo
 This would be private, but my <ins>school doesn't allow me</ins> to download from private repositories.
 <hr>
 Also, I like to add quotes in my apps. It's just a personal thing.
+<hr>
+This also has a chance of me syncing it manually to Gitlab.
