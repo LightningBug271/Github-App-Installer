@@ -2,7 +2,10 @@
 App i made to install Git related apps and a few more (like pwsh, UniGetUi, VSCode, and Node.js)</br>
 <hr>
 
-`Github App Installer.hta` (any edition) uses buttons to choose apps to install, and the `.vbs` installs all apps if confirmed. The `.js` installs the apps automatically, but only if you already have [Node.js](https://nodejs.org/en/download/) installed, and open the file with `node.js`.
+`Github App Installer.hta` (any edition) uses buttons to choose apps to install, and the `.vbs` installs all apps if confirmed. The `.js` installs the apps automatically, but only if you already have [Node.js](https://nodejs.org/en/download/) installed, and open the file with any `node.exe`file. </br>
+
+> [!NOTE]
+> The only one that I have tested is the one that appears with Adobe Apps. The rest should theoretically work, but my school doesn't allow me to install them.
 
 <hr>
 This would be private, but my <ins>school doesn't allow me</ins> to download from private repositories.
