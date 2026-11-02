@@ -1,3 +1,4 @@
+echo("Github App Installer - Batch Edition")
 winget install git.git --scope user
 winget install Microsoft.VisualStudioCode --scope user
 winget install --id Microsoft.PowerShell --source winget

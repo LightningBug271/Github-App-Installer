@@ -1,4 +1,4 @@
-response = MsgBox ("Start Instalation?", 4+32 ,"GithubAppInstaller")
+response = MsgBox ("Start Instalation?", 4+32 ,"GithubAppInstaller - VBScript Edition")
 Select Case response
 Case vbYes
 	Set objShell = CreateObject("WScript.Shell")

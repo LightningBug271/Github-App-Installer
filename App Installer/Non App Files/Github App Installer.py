@@ -14,7 +14,7 @@ def winget(package_id: str):
         "--accept-source-agreements",
 		"--scope", "user"
     ]
-    
+    print("Github App Installer - Python Edition")
     print(f"Starting installation for {package_id}...")
     
     try:

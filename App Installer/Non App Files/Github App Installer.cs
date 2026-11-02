@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
-
+Console.WriteLine("Github App Installer - C# Edition");
 class Program
 {
     static async Task Main()
