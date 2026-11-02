@@ -13,6 +13,8 @@ function pauseForConfirmation() {
         process.exit(0); 
     });
 }
+/* Again, Just kill me bro I have to convert this to typescript?
+(wait javascript still works here my bad)*/
 const apps = [
   { name: 'Git', cmd: 'winget install git.git --scope user --accept-source-agreements --accept-package-agreements' },
   { name: 'VS Code', cmd: 'winget install Microsoft.VisualStudioCode --scope user --accept-source-agreements --accept-package-agreements' },

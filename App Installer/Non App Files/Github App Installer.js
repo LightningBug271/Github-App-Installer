@@ -12,6 +12,7 @@ function pauseForConfirmation() {
         process.exit(0); 
     });
 }
+// Just kill me bro I have to convert this to every language?
 const apps = [
   { name: 'Git', cmd: 'winget install git.git --scope user --accept-source-agreements --accept-package-agreements' },
   { name: 'VS Code', cmd: 'winget install Microsoft.VisualStudioCode --scope user --accept-source-agreements --accept-package-agreements' },

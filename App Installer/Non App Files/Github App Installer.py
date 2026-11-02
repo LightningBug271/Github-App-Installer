@@ -39,3 +39,5 @@ winget (" OpenJS.NodeJS.LTS")
 winget (" OpenJS.Electron.44")
 winget (" Microsoft.Sysinternals.ProcessExplorer")
 winget ("notepad++")
+# WHAT HAPPENED TO PYTHON BEING EASY? THE JAVASCRIPT WAS 10 TIMES EASIER THAN THIS AND I JUST LEARNED IT! I'M SUPPOSED TO KNOW PYTHON! FUCK THIS IM OUT
+# Ok, I'm back, this isn't that hard.
