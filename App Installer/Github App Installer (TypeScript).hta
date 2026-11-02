@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github App Installer (Modern JavaScript)</title>
+
+    <HTA:APPLICATION
+        ID="GithubAppInstallerModernJavaScript"
+        APPLICATIONNAME="GithubAppInstallerModernJavaScript"
+        SCROLL="yes"
+        SINGLEINSTANCE="yes"
+        WINDOWSTATE="normal"
+    />
+
+    <script language="VBScript">
+        Function JsgBox(prompt, buttons, title)
+            JsgBox = MsgBox(prompt, buttons, title)
+        End Function
+    </script>
+
+    <script language="javascript">
+        // HTA files cannot run TypeScript directly.
+        // This file keeps the same .hta app format while using JavaScript syntax and a TypeScript-friendly structure.
+
+        const runInstaller = (name, command) => {
+            const response = JsgBox("Are you sure?", 4 + 32, "GithubAppInstaller");
+            if (response !== 6) {
+                JsgBox("Installation Canceled.", 0, "GithubAppInstaller");
+                return;
+            }
+
+            const shell = new ActiveXObject("WScript.Shell");
+            const exitCode = shell.Run(command, 1, true);
+
+            if (exitCode !== 0) {
+                JsgBox(`Install failed for ${name}. Exit code: ${exitCode}`, 0, "GithubAppInstaller");
+            } else {
+                JsgBox("Installation Complete.", 0, "GithubAppInstaller");
+            }
+        };
+
+        window.onload = () => {
+            window.resizeTo(550, 700);
+        };
+
+        function Git() {
+            runInstaller("Git", "winget install git.git --scope user");
+        }
+
+        function VSCode() {
+            runInstaller("VS Code", "winget install Microsoft.VisualStudioCode --scope user");
+        }
+
+        function PWSH() {
+            runInstaller("PowerShell", "winget install Microsoft.Powershell --source winget");
+        }
+
+        function UniGet() {
+            runInstaller("UniGetUI", "winget install Devolutions.UniGetUI --scope user");
+        }
+
+        function Copilot() {
+            runInstaller("GitHub Copilot", "winget install GitHub.Copilot");
+        }
+
+        function LFS() {
+            runInstaller("Git LFS", "winget install GitHub.LFS");
+        }
+
+        function Hub() {
+            runInstaller("GitHub Desktop", "winget install GitHub.GitHubDesktop");
+        }
+
+        function npm() {
+            runInstaller("Node.js", "winget install OpenJS.NodeJS.LTS --scope user");
+        }
+
+        function Elec() {
+            runInstaller("Electron", "winget install -e --id OpenJS.Electron.44");
+        }
+
+        function Note() {
+            runInstaller("Notepad++", "winget install notepad++ --scope user");
+        }
+
+        function tsc() {
+            runInstaller("TypeScript", "cmd /c npm install -g typescript");
+            JsgBox("TypeScript installed globally. You can run tsc from the command line.", 0, "GithubAppInstaller");
+        }
+
+        function closeAPP() {
+            const response = JsgBox("Are you sure?", 4 + 32, "GithubAppInstaller");
+            if (response === 6) {
+                window.close();
+            } else {
+                JsgBox("Canceled.", 0, "GithubAppInstaller");
+            }
+        }
+
+        function Video() {
+            const shell = new ActiveXObject("WScript.Shell");
+            const command = "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1";
+            shell.Run(command, 1, true);
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #61ab75;
+            padding: 20px;
+        }
+        .btn {
+            display: block;
+            width: 260px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>GithubAppInstaller</h1></center>
+    <center><h2>Modern JavaScript Edition</h2></center>
+    <h2>Select a App:</h2>
+    <h6>In order to make a man or a boy covet a thing, it is only necessary to make the thing difficult to attain. <i>Twain, Mark. The Adventures of Tom Sawyer. pg 20.</i></h6>
+
+    <input type="button" class="btn" value="Download Git" onClick="Git()">
+    <input type="button" class="btn" value="Download Github" onClick="Hub()">
+    <input type="button" class="btn" value="Download VSCode" onClick="VSCode()">
+    <input type="button" class="btn" value="Download Powershell" onClick="PWSH()">
+    <input type="button" class="btn" value="Download UniGetUI" onClick="UniGet()">
+    <input type="button" class="btn" value="Download Github Copilot" onClick="Copilot()">
+    <input type="button" class="btn" value="Download Git LFS" onClick="LFS()">
+    <input type="button" class="btn" value="Download Node.js" onClick="npm()">
+    <input type="button" class="btn" value="Download Electron" onClick="Elec()">
+    <input type="button" class="btn" value="Download Notepad++" onClick="Note()">
+    <input type="button" class="btn" value="Download TypeScript" onClick="tsc()">
+
+    <hr>
+    <h3>Important Video</h3>
+    <input type="button" class="btn" value="Open Video" onClick="Video()">
+    <hr>
+
+    <input type="button" class="btn" value="Exit Application" onClick="closeAPP()">
+    <h6>GithubAppInstaller version: 2.1.0: prerelease FRICK</h6>
+</body>
+</html>

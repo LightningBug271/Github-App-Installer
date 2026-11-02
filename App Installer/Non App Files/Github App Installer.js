@@ -27,6 +27,7 @@ const apps = [
   { name: 'Notepad++', cmd: 'winget install Notepad++.Notepad++ --scope user --accept-source-agreements --accept-package-agreements' }
 ];
 const execOptions = { stdio: 'inherit' };
+console.log('GithubAppInstaller - JavaScript Edition');
 console.log('Starting Installation');
 apps.forEach(app => {
   try {
@@ -38,5 +39,5 @@ apps.forEach(app => {
   }
 });
 
-console.log('Install Completed');
+console.log("All requested installs have been attempted.");
 pauseForConfirmation();
