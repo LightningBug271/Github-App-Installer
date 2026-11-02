@@ -10,18 +10,17 @@
         SINGLEINSTANCE="yes"
         WINDOWSTATE="normal"
     />
-
-    <script language="VBScript">
-        Function JsgBox(prompt, buttons, title)
-            JsgBox = MsgBox(prompt, buttons, title)
-        End Function
-    </script>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script language="javascript">
         // HTA files cannot run TypeScript directly.
         // This file keeps the same .hta app format while using JavaScript syntax and a TypeScript-friendly structure.
 
-        const runInstaller = (name, command) => {
+        function JsgBox(prompt, buttons, title) {
+            var shell = new ActiveXObject("WScript.Shell");
+            return shell.Popup(prompt, 0, title, buttons);
+        }
+
+        function runInstaller(name, command) {
             const response = JsgBox("Are you sure?", 4 + 32, "GithubAppInstaller");
             if (response !== 6) {
                 JsgBox("Installation Canceled.", 0, "GithubAppInstaller");
@@ -32,13 +31,13 @@
             const exitCode = shell.Run(command, 1, true);
 
             if (exitCode !== 0) {
-                JsgBox(`Install failed for ${name}. Exit code: ${exitCode}`, 0, "GithubAppInstaller");
+                JsgBox("Install failed for " + name + ". Exit code: " + exitCode, 0, "GithubAppInstaller");
             } else {
                 JsgBox("Installation Complete.", 0, "GithubAppInstaller");
             }
-        };
+        }
 
-        window.onload = () => {
+        window.onload = function() {
             window.resizeTo(550, 700);
         };
 
@@ -84,7 +83,6 @@
 
         function tsc() {
             runInstaller("TypeScript", "cmd /c npm install -g typescript");
-            JsgBox("TypeScript installed globally. You can run tsc from the command line.", 0, "GithubAppInstaller");
         }
 
         function closeAPP() {
