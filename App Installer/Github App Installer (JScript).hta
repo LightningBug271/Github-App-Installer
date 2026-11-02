@@ -186,14 +186,18 @@
             }
     /* Now time to convert this into the raw code files!
     Thats going to be fun! - @LightningBug271, 26.11.1*/
-        Function tsc() {
+        function tsc() {
             var response = JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "cmd /c npm install -g typescript";
-                shell.Run(command, 1, true);
-                JsgBox("TypeScript installed globally. You can run tsc from the command line.", 0 , "GithubAppInstaller");
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for TypeScript. Exit code: " + exitCode, 0 , "GithubAppInstaller");
+                } else {
+                    JsgBox("TypeScript installed globally. You can run tsc from the command line.", 0 , "GithubAppInstaller");
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
