@@ -14,7 +14,7 @@ function pauseForConfirmation() {
     });
 }
 /* Again, Just kill me bro I have to convert this to typescript?
-(wait javascript still works here my bad)*/
+(wait javascript still works here my bad)  - @LightningBug271, 26.11.1*/
 const apps = [
   { name: 'Git', cmd: 'winget install git.git --scope user --accept-source-agreements --accept-package-agreements' },
   { name: 'VS Code', cmd: 'winget install Microsoft.VisualStudioCode --scope user --accept-source-agreements --accept-package-agreements' },
@@ -24,6 +24,7 @@ const apps = [
   { name: 'Git LFS', cmd: 'winget install -e --id GitHub.GitLFS  --accept-source-agreements --accept-package-agreements'},
   { name: 'GitHub Desktop', cmd: 'winget install GitHub.GitHubDesktop --accept-source-agreements --accept-package-agreements' },
   { name: 'Node.js LTS', cmd: 'winget install OpenJS.NodeJS.LTS  --accept-source-agreements --accept-package-agreements' },
+  { name: 'TypeScript', cmd: 'npm install -g typescript' },
   { name: 'Electron v44', cmd: 'winget install -e --id OpenJS.Electron.44 --accept-source-agreements --accept-package-agreements' },
   { name: 'Notepad++', cmd: 'winget install Notepad++.Notepad++ --scope user --accept-source-agreements --accept-package-agreements' }
 ];

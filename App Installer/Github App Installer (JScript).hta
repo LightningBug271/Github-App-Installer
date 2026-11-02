@@ -24,8 +24,12 @@
                   if (response == 6) {
                     var shell = new ActiveXObject("WScript.Shell");
                     var command = "winget install git.git --scope user";
-                    shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                    var exitCode = shell.Run(command, 1, true);
+                    if (exitCode !== 0) {
+                        JsgBox("Install failed for Git. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                    } else {
+                        JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                    }
                   }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                   }
@@ -37,8 +41,12 @@
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install Microsoft.VisualStudioCode --scope user";
-                shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for VS Code. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                } else {
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
@@ -48,8 +56,12 @@
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install Microsoft.Powershell --source winget";
-                shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for PowerShell. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                } else {
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
@@ -59,8 +71,12 @@
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install Devolutions.UniGetUI --scope user";
-                shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for UniGetUI. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                } else {
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
@@ -70,8 +86,12 @@
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install GitHub.Copilot";
-                shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for GitHub Copilot. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                } else {
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
@@ -81,8 +101,12 @@
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install GitHub.LFS";
-                shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for Git LFS. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                } else {
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
@@ -92,8 +116,12 @@
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install GitHub.GitHubDesktop";
-                shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for GitHub Desktop. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                } else {
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
@@ -103,8 +131,12 @@
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install OpenJS.NodeJS.LTS --scope user";
-                shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for Node.js. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                } else {
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
@@ -114,8 +146,12 @@
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install -e --id OpenJS.Electron.44"
-                shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for Electron. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                } else {
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
@@ -125,8 +161,12 @@
               if (response == 6) {
                 var shell = new ActiveXObject("WScript.Shell");
                 var command = "winget install notepad++ --scope user"
-                shell.Run(command, 1, true);
-                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                var exitCode = shell.Run(command, 1, true);
+                if (exitCode !== 0) {
+                    JsgBox("Install failed for Notepad++. Exit code: " + exitCode, 0, "GithubAppInstaller");
+                } else {
+                    JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }
                 }else {
                     JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
                 }
@@ -145,7 +185,19 @@
             shell.Run(command, 1, true);
             }
     /* Now time to convert this into the raw code files!
-    Thats going to be fun!*/
+    Thats going to be fun! - @LightningBug271, 26.11.1*/
+        Function tsc() {
+            var response = JsgBox("Are you Sure?", 4+32 ,"GithubAppInstaller");
+              if (response == 6) {
+                var shell = new ActiveXObject("WScript.Shell");
+                var command = "cmd /c npm install -g typescript";
+                shell.Run(command, 1, true);
+                JsgBox("TypeScript installed globally. You can run tsc from the command line.", 0 , "GithubAppInstaller");
+                JsgBox("Installation Complete.", 0 , "GithubAppInstaller");
+                }else {
+                    JsgBox("Installation Canceled.", 0 , "GithubAppInstaller");
+                }
+        }
     </script>
 
     <style>
@@ -178,13 +230,13 @@
     <input type="button" class="btn" value="Download Node.js" onClick="npm()">
 	<input type="button" class="btn" value="Download Electron" onClick="Elec()">
 	<input type="button" class="btn" value="Download Notepad++" onClick="Note()">
-
+    <input type="button" class="btn" value="Download TypeScript" onClick="tsc()">
     <hr>
 <h3>Important Video</h3>
 <input type="button" class="btn" value="Open Video" onClick="Video()">
     <hr>    
-    <input type="button" class="btn" value="Exit Application" onClick="CloseApp()">
-<h6>GithubAppInstaller version: 2.1.0: prerelease FUCK</h6>
+    <input type="button" class="btn" value="Exit Application" onClick="closeAPP()">
+<h6>GithubAppInstaller version: 2.1.0: prerelease FRICK</h6>
 
 </body>
 </html>

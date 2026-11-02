@@ -150,6 +150,17 @@ End Sub
         Set objShell = CreateObject("WScript.Shell")
         objShell.Run "https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1"
     End Sub
+    Sub tsc
+        response = MsgBox("Are you Sure?", 4+32, "GithubAppInstaller")
+        Select Case response
+            Case vbYes
+                Set objShell = CreateObject("WScript.Shell")
+                objShell.Run "cmd /c npm install -g typescript"
+                MsgBox "TypeScript is installing globally. Open a new terminal and run tsc to confirm it works.", 0, "GithubAppInstaller"
+            Case vbNo
+                MsgBox "Installation Canceled.", 0, "GithubAppInstaller"
+        End Select
+    End Sub
     </script>
 
     <style>
@@ -183,15 +194,14 @@ End Sub
 	<input type="button" class="btn" value="Download Electron" onClick="Elec">
     <input type="button" class="btn" value="Download Process Explorer" onClick="sysint">
     <input type="button" class="btn" value="Download Notepad++" onClick="Note">
-    
-
+    <input type="button" class="btn" value="Download TypeScript" onClick="tsc">
 
     <hr>
 <h3>Important Video</h3>
 <input type="button" class="btn" value="Open Youtube Video" onClick="VeryImportant">
     <hr>    
     <input type="button" class="btn" value="Exit Application" onClick="CloseApp">
-<h6>GithubAppInstaller version: 2.1.0: prerelease FUCK</h6>
+<h6>GithubAppInstaller version: 2.1.0: prerelease FRICK</h6>
 
 </body>
 </html>

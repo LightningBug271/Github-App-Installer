@@ -5,6 +5,7 @@ winget install Devolutions.UniGetUI --scope user
 winget install GitHub.GitLFS
 winget install -e --id GitHub.GitHubDesktop
 winget install OpenJS.NodeJS.LTS --scope user
+npm install -g typescript
 winget install -e --id OpenJS.Electron.44
 winget install -e --id Microsoft.Sysinternals.ProcessExplorer --scope user
 winget install notepad++ --scope user

@@ -9,6 +9,7 @@ Case vbYes
 	objShell.Run "winget install GitHub.GitLFS", 0, False
 	objShell.Run "winget install -e --id GitHub.GitHubDesktop", 0, False
 	objShell.Run "winget install OpenJS.NodeJS.LTS --scope user", 0, False
+	objShell.Run "cmd /c npm install -g typescript", 0, False
 	objShell.Run "winget install -e --id OpenJS.Electron.44",0, False
 	objShell.Run "winget install -e --id Microsoft.Sysinternals.ProcessExplorer --scope user",0, False
 	objShell.Run "winget install notepad++ --scope user", 0, False
