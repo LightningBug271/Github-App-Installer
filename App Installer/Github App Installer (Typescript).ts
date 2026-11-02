@@ -1,3 +1,4 @@
+allowJs: true 
 const { execSync } = require('child_process');
 const readline = require('readline');
 
